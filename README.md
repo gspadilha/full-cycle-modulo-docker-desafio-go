@@ -7,16 +7,16 @@ Esse desafio é muito empolgante principalmente se você nunca trabalhou com a l
 Você terá que publicar uma imagem no docker hub. Quando executarmos:
 
 ```
-docker run <seu-user>/fullcycle
+docker run gspadilha/fullcycle
 ```
 
-Temos que ter o seguinte resultado: Full Cycle Rocks!!
+Temos que ter o seguinte resultado: <b>Full Cycle Rocks!!</b>
 
 Se você perceber, essa imagem apenas realiza um print da mensagem como resultado final, logo, vale a pena dar uma conferida no próprio site da Go Lang para aprender como fazer um "olá mundo".
 
 Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o Docker Hub.
 
-3) A imagem de nosso projeto Go precisa ter menos de 2MB =)
+A imagem de nosso projeto Go precisa ter menos de 2MB =)
 
 Dica: No vídeo de introdução sobre o Docker quando falamos sobre o sistema de arquivos em camadas, apresento uma imagem "raiz", talvez seja uma boa utilizá-la.
 
@@ -28,20 +28,20 @@ Divirta-se!
 
 # Build 
 ```
-docker build -t gspadilha/fullcycle .
+docker build -t <seu-user>/fullcycle .
 ```
 
 # Push
 ```
-docker push gspadilha/fullcycle:latest
+docker push <seu-user>/fullcycle:latest
 ```
 
 # Pull 
 ```
-docker pull gspadilha/fullcycle
+docker pull <seu-user>/fullcycle
 ```
 
 # Executar o container
 ```
-docker run --rm gspadilha/fullcycle
+docker run --rm <seu-user>/fullcycle
 ```
